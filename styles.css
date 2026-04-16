@@ -249,13 +249,17 @@ h1 {
 
 .section--profile .panel,
 .timeline__item,
-.project-card {
+.project-card,
+.tools-panel,
+.contact-card {
   padding: 28px;
 }
 
 .section--profile .panel p,
 .timeline__item p,
 .project-card p,
+.tools-panel p,
+.contact-card p,
 .project-points li {
   line-height: 1.75;
   color: rgba(16, 19, 26, 0.82);
@@ -341,6 +345,62 @@ h1 {
   box-shadow: 0 0 18px rgba(255, 255, 255, 0.45);
 }
 
+.tools-list {
+  margin-top: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.tools-list span,
+.contact-card a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(16, 19, 26, 0.12);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.tools-list span {
+  font-size: 0.9rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.contact-card {
+  min-height: 100%;
+}
+
+.contact-card h3 {
+  margin-top: 12px;
+  font-size: 1.5rem;
+  letter-spacing: -0.04em;
+}
+
+.contact-card a {
+  margin-top: 14px;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.92rem;
+  word-break: break-word;
+  transition:
+    transform 220ms ease,
+    background 220ms ease,
+    border-color 220ms ease;
+}
+
+.contact-card a:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.46);
+  border-color: rgba(16, 19, 26, 0.2);
+}
+
 .site-footer {
   width: var(--container);
   margin: 0 auto;
@@ -377,7 +437,8 @@ h1 {
 }
 
 @media (max-width: 920px) {
-  .projects-grid {
+  .projects-grid,
+  .contact-grid {
     grid-template-columns: 1fr;
   }
 
@@ -417,7 +478,9 @@ h1 {
 
   .section--profile .panel,
   .timeline__item,
-  .project-card {
+  .project-card,
+  .tools-panel,
+  .contact-card {
     padding: 22px;
   }
 }
