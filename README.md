@@ -1,12 +1,13 @@
-# Portfolio de Álvaro Gabriel Ramírez Álvarez
+# Portfolio de Gabriel Alvarez
 
-README de prueba para verificar la escritura en el repositorio desde la conexión de GitHub.
+Portfolio Y2K migrado de Sites a React + Vite para GitHub Pages, conservando su diseño y contenido.
 
-## Estado
+## Desarrollo
+Requiere Node.js 22.13 o posterior.
 
-Portfolio en preparación.
+    npm ci
+    npm run dev
 
-## Contacto
-
-- [GitHub](https://github.com/alvarogabriel-ramirez)
-- [LinkedIn](https://www.linkedin.com/in/gaaabriel/)
+## Publicación
+Ejecutar npm run build y guardar la carpeta docs. GitHub Pages sirve main /docs.
+No requiere servidor: la terminal es interactiva en el navegador y el formulario de contacto prepara un correo.
